@@ -26,18 +26,19 @@ body {
 }
 
 .outer-container {
-  min-height: auto;
-  min-width: 800px;
-  margin: 0 auto;
+  /* min-height: auto;
+  max-width: 1200px;
+  margin: 0 auto;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10rem;
 }
 
 .inner-container {
   min-width: 100%;
-  min-height: 100%;
+  min-height: auto;
 }
 
 .window {
@@ -45,4 +46,19 @@ body {
 
 .content-container {
   display: flex;
+  justify-content: space-between;
+}
+
+.left-inner-content,
+.right-inner-content {
+  flex-grow: 1;
+}
+
+.right-inner-content {
+  overflow-y: scroll;
+  max-height: 600px;
+}
+
+.left-inner-content {
+  margin-right: 1rem;
 }

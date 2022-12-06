@@ -19,14 +19,14 @@ function App() {
               <div className="content-container">
                 <div className="left-inner-content">
                   <fieldset>
-                    <legend>Today's mood</legend>
+                    <legend> Select one</legend>
                     <div className="field-row">
                       <input
                         id="radio13"
                         type="radio"
                         name="fieldset-example2"
                       />
-                      <label htmlFor="radio13">Who am I</label>
+                      <label htmlFor="radio13">About</label>
                     </div>
                     <div className="field-row">
                       <input
@@ -34,7 +34,7 @@ function App() {
                         type="radio"
                         name="fieldset-example2"
                       />
-                      <label htmlFor="radio14">Curriculum Vitae</label>
+                      <label htmlFor="radio14">Experience</label>
                     </div>
                     <div className="field-row">
                       <input
@@ -42,7 +42,23 @@ function App() {
                         type="radio"
                         name="fieldset-example2"
                       />
-                      <label htmlFor="radio15">Development</label>
+                      <label htmlFor="radio15">Tools</label>
+                    </div>
+                    <div className="field-row">
+                      <input
+                        id="radio16"
+                        type="radio"
+                        name="fieldset-example2"
+                      />
+                      <label htmlFor="radio16">Development</label>
+                    </div>
+                    <div className="field-row">
+                      <input
+                        id="radio16"
+                        type="radio"
+                        name="fieldset-example2"
+                      />
+                      <label htmlFor="radio16">User Interface</label>
                     </div>
                     <div className="field-row">
                       <input
@@ -51,6 +67,30 @@ function App() {
                         name="fieldset-example2"
                       />
                       <label htmlFor="radio16">Design</label>
+                    </div>
+                    <div className="field-row">
+                      <input
+                        id="radio16"
+                        type="radio"
+                        name="fieldset-example2"
+                      />
+                      <label htmlFor="radio16">Learning</label>
+                    </div>
+                    <div className="field-row">
+                      <input
+                        id="radio16"
+                        type="radio"
+                        name="fieldset-example2"
+                      />
+                      <label htmlFor="radio16">Listening to</label>
+                    </div>
+                    <div className="field-row">
+                      <input
+                        id="radio16"
+                        type="radio"
+                        name="fieldset-example2"
+                      />
+                      <label htmlFor="radio16">Likes</label>
                     </div>
                   </fieldset>
                 </div>
@@ -64,7 +104,14 @@ function App() {
                         <li>Selectors</li>
                         <li>Specificity</li>
                         <li>Properties</li>
-
+                        <li>Selectors</li>
+                        <li>Specificity</li>
+                        <li>Properties</li>
+                        <li>Selectors</li>
+                        <li>Specificity</li>
+                        <li>Properties</li>
+                        <li>Selectors</li>
+                        <li>Specificity</li>
                         <li>Selectors</li>
                         <li>Specificity</li>
                         <li>Properties</li>
