@@ -61,6 +61,8 @@ body {
 
 .left-inner-content {
   margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .status-bar-field {
@@ -81,6 +83,17 @@ label {
 
 .mobile-select {
   display: none;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: end;
+}
+
+.contact-container button {
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 600px) {

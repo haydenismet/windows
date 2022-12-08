@@ -9,6 +9,11 @@ function WindowLeft() {
       <div className="left-inner-content">
         <WindowLeftDesktop />
         <WindowLeftMobile />
+        <div className="contact-container">
+          <button>Github</button>
+          <button>LinkedIn</button>
+          <button>PDF Export</button>
+        </div>
       </div>
     </>
   );
