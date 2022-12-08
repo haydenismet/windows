@@ -1,11 +1,9 @@
 import React from "react";
-import "98.css";
-import "./App.css";
 
-function WindowLeft() {
+function WindowLeftDesktop() {
   return (
     <>
-      <div className="left-inner-content">
+      <div className="desktop-radio">
         <fieldset>
           <legend> Select one</legend>
           <div className="field-row">
@@ -50,4 +48,4 @@ function WindowLeft() {
   );
 }
 
-export default WindowLeft;
+export default WindowLeftDesktop;

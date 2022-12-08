@@ -1,8 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
-import Window from "./Window";
+import Window from "./components/Window";
 import "98.css";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   return (

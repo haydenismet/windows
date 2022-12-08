@@ -1,6 +1,4 @@
 import React from "react";
-import "98.css";
-import "./App.css";
 
 function WindowHeader() {
   return (

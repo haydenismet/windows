@@ -79,6 +79,10 @@ p.status-bar-field:nth-child(2) {
 label {
 }
 
+.mobile-select {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .outer-container {
     height: 100%;
@@ -86,5 +90,22 @@ label {
 
   .content-container {
     flex-direction: column;
+  }
+
+  .desktop-radio {
+    display: none;
+  }
+
+  .mobile-select {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-select select {
+    margin-bottom: 13px;
+  }
+
+  .left-inner-content {
+    margin-right: 0;
   }
 }

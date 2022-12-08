@@ -1,10 +1,8 @@
 import React from "react";
 import WindowHeader from "./WindowHeader";
-import "98.css";
-import "./App.css";
+import WindowFooter from "./WindowFooter";
 import WindowLeft from "./WindowLeft";
 import WindowRight from "./WindowRight";
-import WindowFooter from "./WindowFooter";
 
 function Window() {
   return (
