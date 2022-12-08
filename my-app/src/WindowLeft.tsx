@@ -9,7 +9,7 @@ function WindowLeft() {
         <fieldset>
           <legend> Select one</legend>
           <div className="field-row">
-            <input id="radio13" type="radio" name="fieldset-example2" />
+            <input id="radio13" type="radio" name="fieldset-example2" checked />
             <label htmlFor="radio13">About</label>
           </div>
           <div className="field-row">

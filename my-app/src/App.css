@@ -7,6 +7,11 @@
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: "WindowsFont"; /*Can be any text*/
+  src: local("w95fa"), url("./assets/fonts/w95fa.woff") format("woff");
+}
+
 html {
   font-size: 62.5%;
   /* 16px */
@@ -55,6 +60,8 @@ body {
 
 .left-inner-content {
   margin-right: 1rem;
+  font-weight: 900;
+  font-family: "WindowsFont";
 }
 
 .status-bar-field {
