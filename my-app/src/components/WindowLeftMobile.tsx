@@ -14,6 +14,7 @@ function WindowLeftMobile() {
           <option>Learning</option>
           <option>Listening to</option>
           <option>Likes</option>
+          <option>Contact</option>
         </select>
       </div>
     </>

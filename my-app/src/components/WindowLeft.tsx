@@ -2,18 +2,14 @@ import React from "react";
 
 import WindowLeftDesktop from "./WindowLeftDesktop";
 import WindowLeftMobile from "./WindowLeftMobile";
-
+import Contact from "./Contact";
 function WindowLeft() {
   return (
     <>
       <div className="left-inner-content">
         <WindowLeftDesktop />
         <WindowLeftMobile />
-        <div className="contact-container">
-          <button>Github</button>
-          <button>LinkedIn</button>
-          <button>PDF Export</button>
-        </div>
+        <Contact />
       </div>
     </>
   );

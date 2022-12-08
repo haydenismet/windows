@@ -42,6 +42,32 @@ function WindowRight() {
               <li>Selectors</li>
               <li>Specificity</li>
               <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Specificity</li>
+              <li>Properties</li>
             </ul>
           </li>
           <li>
