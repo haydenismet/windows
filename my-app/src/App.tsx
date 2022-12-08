@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
 import Window from "./Window";
-import "./assets/fonts/w95fa.woff";
 import "98.css";
 import "./App.css";
 

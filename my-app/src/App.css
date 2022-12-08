@@ -6,11 +6,12 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
+/*
 @font-face {
-  font-family: "WindowsFont"; /*Can be any text*/
-  src: local("w95fa"), url("./assets/fonts/w95fa.woff") format("woff");
-}
+  font-family: "DOS9"; /*Can be any text*/
+/* src: local("ModernDOS9x16"),
+    url("./assets/fonts/ModernDOS9x16.ttf") format("ttf");
+}*/
 
 html {
   font-size: 62.5%;
@@ -60,8 +61,6 @@ body {
 
 .left-inner-content {
   margin-right: 1rem;
-  font-weight: 900;
-  font-family: "WindowsFont";
 }
 
 .status-bar-field {
@@ -75,4 +74,7 @@ p.status-bar-field:nth-child(1) {
 p.status-bar-field:nth-child(2) {
   flex: 0;
   text-align: center;
+}
+
+label {
 }
