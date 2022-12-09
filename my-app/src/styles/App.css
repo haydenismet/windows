@@ -29,6 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #494949;
 }
 
 .outer-container {
@@ -49,7 +50,10 @@ body {
   justify-content: space-between;
 }
 
-.left-inner-content,
+.left-inner-content {
+  flex: 0.15;
+}
+
 .right-inner-content {
   flex-grow: 1;
 }
@@ -94,6 +98,10 @@ label {
 
 .contact-container button {
   margin: 1rem 1rem;
+}
+
+.about ul li {
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 600px) {
