@@ -78,7 +78,7 @@ p.status-bar-field:nth-child(1) {
 }
 
 p.status-bar-field:nth-child(2) {
-  flex: 0;
+  flex: 0.045 1;
   text-align: right;
 }
 

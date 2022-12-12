@@ -7,40 +7,76 @@ function WindowLeftDesktop() {
         <fieldset>
           <legend> Select one</legend>
           <div className="field-row">
-            <input id="radio13" type="radio" name="fieldset-example2" checked />
-            <label htmlFor="radio13">About</label>
+            <input
+              id="radio1"
+              type="radio"
+              data-portfolio="experience"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio1">Experience</label>
           </div>
           <div className="field-row">
-            <input id="radio14" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio14">Experience</label>
+            <input
+              id="radio2"
+              type="radio"
+              data-portfolio="tools"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio2">Tools</label>
           </div>
           <div className="field-row">
-            <input id="radio15" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio15">Tools</label>
+            <input
+              id="radio3"
+              type="radio"
+              data-portfolio="development"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio3">Development</label>
           </div>
           <div className="field-row">
-            <input id="radio16" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio16">Development</label>
+            <input
+              id="radio4"
+              type="radio"
+              data-portfolio="userinterface"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio4">User Interface</label>
           </div>
           <div className="field-row">
-            <input id="radio16" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio16">User Interface</label>
+            <input
+              id="radio5"
+              type="radio"
+              data-portfolio="design"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio5">Design</label>
           </div>
           <div className="field-row">
-            <input id="radio16" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio16">Design</label>
+            <input
+              id="radio6"
+              type="radio"
+              data-portfolio="learning"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio6">Learning</label>
           </div>
           <div className="field-row">
-            <input id="radio16" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio16">Learning</label>
+            <input
+              id="radio7"
+              type="radio"
+              data-portfolio="listening"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio7">Listening to</label>
           </div>
           <div className="field-row">
-            <input id="radio16" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio16">Listening to</label>
-          </div>
-          <div className="field-row">
-            <input id="radio16" type="radio" name="fieldset-example2" />
-            <label htmlFor="radio16">Likes</label>
+            <input
+              id="radio8"
+              type="radio"
+              data-portfolio="likes"
+              name="portfolio-checklist"
+            />
+            <label htmlFor="radio8">Likes</label>
           </div>
         </fieldset>
       </div>
