@@ -3,12 +3,17 @@ import WindowHeader from "./WindowHeader";
 import WindowFooter from "./WindowFooter";
 import WindowLeft from "./WindowLeft";
 import WindowRight from "./WindowRight";
+import ClosePortfolioModal from "./ClosePortfolioModal";
 
-function Window() {
+function Window(props: any) {
   return (
     <>
       <div className="window">
-        <WindowHeader />
+        <WindowHeader
+          closeClick={props.closeClick}
+          handleCloseClick={props.handleCloseClick}
+          setCloseClick={props.setCloseClick}
+        />
         <div className="window-body">
           <div className="content-container">
             <WindowLeft />
@@ -17,6 +22,14 @@ function Window() {
         </div>
         <WindowFooter />
       </div>
+
+      {props.closeClick === "close" ? (
+        <ClosePortfolioModal
+          closeClick={props.closeClick}
+          handleCloseClick={props.handleCloseClick}
+          setCloseClick={props.setCloseClick}
+        />
+      ) : null}
     </>
   );
 }

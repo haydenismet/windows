@@ -3,7 +3,7 @@ import React from "react";
 function ClosePortfolio() {
   return (
     <>
-      <div className="close-container">You can't leave. Ever.</div>
+      <div className="close-container">You can never leave.</div>
     </>
   );
 }

@@ -40,6 +40,7 @@ body {
 .inner-container {
   min-width: 100%;
   min-height: auto;
+  position: relative;
 }
 
 .window {
@@ -102,6 +103,20 @@ label {
 
 .about ul li {
   margin-left: 1rem;
+}
+
+.close-container {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.close-container-modal {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 @media screen and (max-width: 600px) {
