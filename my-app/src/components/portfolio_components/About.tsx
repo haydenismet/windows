@@ -8,7 +8,7 @@ function About() {
           <li>
             <h3>About</h3>
           </li>
-          <li>What is web development?</li>
+          <li>Thanks for visiting!</li>
           <li>
             CSS
             <ul>

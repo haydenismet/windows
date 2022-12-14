@@ -16,8 +16,11 @@ function Window(props: any) {
         />
         <div className="window-body">
           <div className="content-container">
-            <WindowLeft />
-            <WindowRight />
+            <WindowLeft
+              handleNavClick={props.handleNavClick}
+              navClick={props.navClick}
+            />
+            <WindowRight navClick={props.navClick} />
           </div>
         </div>
         <WindowFooter />

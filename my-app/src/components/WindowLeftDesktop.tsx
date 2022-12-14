@@ -1,82 +1,90 @@
 import React from "react";
 
-function WindowLeftDesktop() {
+function WindowLeftDesktop(props: any) {
   return (
     <>
       <div className="desktop-radio">
-        <fieldset>
+        <fieldset id="desktop-radio-options">
           <legend> Select one</legend>
           <div className="field-row">
             <input
-              id="radio1"
+              id="radio-experience"
               type="radio"
               data-portfolio="experience"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio1">Experience</label>
+            <label htmlFor="radio-experience">Experience</label>
           </div>
           <div className="field-row">
             <input
-              id="radio2"
+              id="radio-tools"
               type="radio"
               data-portfolio="tools"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio2">Tools</label>
+            <label htmlFor="radio-tools">Tools</label>
           </div>
           <div className="field-row">
             <input
-              id="radio3"
+              id="radio-development"
               type="radio"
               data-portfolio="development"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio3">Development</label>
+            <label htmlFor="radio-development">Development</label>
           </div>
           <div className="field-row">
             <input
-              id="radio4"
+              id="radio-userinterface"
               type="radio"
               data-portfolio="userinterface"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio4">User Interface</label>
+            <label htmlFor="radio-userinterface">User Interface</label>
           </div>
           <div className="field-row">
             <input
-              id="radio5"
+              id="radio-design"
               type="radio"
               data-portfolio="design"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio5">Design</label>
+            <label htmlFor="radio-design">Design</label>
           </div>
           <div className="field-row">
             <input
-              id="radio6"
+              id="radio-learning"
               type="radio"
               data-portfolio="learning"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio6">Learning</label>
+            <label htmlFor="radio-learning">Learning</label>
           </div>
           <div className="field-row">
             <input
-              id="radio7"
+              id="radio-listening"
               type="radio"
               data-portfolio="listening"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio7">Listening to</label>
+            <label htmlFor="radio-listening">Listening to</label>
           </div>
           <div className="field-row">
             <input
-              id="radio8"
+              id="radio-likes"
               type="radio"
               data-portfolio="likes"
               name="portfolio-checklist"
+              onClick={props.handleNavClick}
             />
-            <label htmlFor="radio8">Likes</label>
+            <label htmlFor="radio-likes">Likes</label>
           </div>
         </fieldset>
       </div>

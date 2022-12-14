@@ -1,6 +1,7 @@
 import React from "react";
 
 function ClosePortfolioModal(props: any) {
+  //console.log("closePortfolioModal, click = ", props.closeClick);
   return (
     <>
       <div className="close-container-modal">

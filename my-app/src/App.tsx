@@ -10,6 +10,14 @@ function App() {
     setCloseClick(e.target.dataset.window);
   }
 
+  const [navClick, setNavClick] = useState<string>("");
+
+  function handleNavClick(e: any) {
+    setNavClick(e.target.dataset.portfolio);
+  }
+
+  console.log(navClick);
+
   return (
     <>
       <div className="outer-container">
@@ -17,7 +25,8 @@ function App() {
           <Window
             handleCloseClick={handleCloseClick}
             closeClick={closeClick}
-            setCloseClick={setCloseClick}
+            handleNavClick={handleNavClick}
+            navClick={navClick}
           />
         </div>
       </div>
