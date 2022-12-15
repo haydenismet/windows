@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import React from "react";
+import Contact from "./portfolio_components/Contact";
 import About from "./portfolio_components/About";
 import Design from "./portfolio_components/Design";
 import Development from "./portfolio_components/Development";
@@ -30,6 +31,8 @@ function WindowRight(props: any) {
         return <Listening />;
       case "likes":
         return <Likes />;
+      case "contact":
+        return <Contact />;
       default:
         return <Welcome />;
     }

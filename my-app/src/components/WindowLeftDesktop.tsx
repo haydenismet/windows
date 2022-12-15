@@ -105,6 +105,17 @@ function WindowLeftDesktop(props: any) {
             />
             <label htmlFor="radio-likes">Likes</label>
           </div>
+          <div className="field-row">
+            <input
+              id="radio-contact"
+              type="radio"
+              data-portfolio="contact"
+              name="portfolio-checklist"
+              onClick={props.handleNavClick}
+              checked={props.navClick === "contact"}
+            />
+            <label htmlFor="radio-contact">Contact</label>
+          </div>
         </fieldset>
       </div>
     </>

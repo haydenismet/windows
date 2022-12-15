@@ -2,7 +2,7 @@ import React from "react";
 
 import WindowLeftDesktop from "./WindowLeftDesktop";
 import WindowLeftMobile from "./WindowLeftMobile";
-import Contact from "./Contact";
+import Contact from "./portfolio_components/Contact";
 function WindowLeft(props: any) {
   return (
     <>
@@ -15,7 +15,7 @@ function WindowLeft(props: any) {
           handleNavClick={props.handleNavClick}
           navClick={props.navClick}
         />
-        <Contact />
+        {/*<Contact />*/}
       </div>
     </>
   );
