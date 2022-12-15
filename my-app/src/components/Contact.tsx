@@ -4,7 +4,6 @@ function Contact() {
   return (
     <>
       <div className="contact-container">
-        <button>Reset</button>
         <button>Github</button>
         <button>LinkedIn</button>
         <button>Export PDF</button>

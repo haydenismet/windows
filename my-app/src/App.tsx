@@ -6,18 +6,19 @@ import ClosePortfolio from "./components/ClosePortfolio";
 
 function App() {
   const [closeClick, setCloseClick] = useState<string>("");
+  const [navClick, setNavClick] = useState<string>("");
   function handleCloseClick(e: any): void {
     setCloseClick(e.target.dataset.window);
   }
 
-  const [navClick, setNavClick] = useState<string>("");
-
   function handleNavClick(e: any) {
-    setNavClick(e.target.dataset.portfolio);
+    if (e.target.dataset.portfolio) {
+      setNavClick(e.target.dataset.portfolio);
+    } else {
+      setNavClick(e.target.value);
+    }
   }
-
-  console.log(navClick);
-
+  console.log("navclick is", navClick);
   return (
     <>
       <div className="outer-container">

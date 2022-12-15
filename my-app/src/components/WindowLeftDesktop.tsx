@@ -8,11 +8,23 @@ function WindowLeftDesktop(props: any) {
           <legend> Select one</legend>
           <div className="field-row">
             <input
+              id="radio-about"
+              type="radio"
+              data-portfolio="about"
+              name="portfolio-checklist"
+              onClick={props.handleNavClick}
+              checked={props.navClick === "about"}
+            />
+            <label htmlFor="radio-about">About</label>
+          </div>
+          <div className="field-row">
+            <input
               id="radio-experience"
               type="radio"
               data-portfolio="experience"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "experience"}
             />
             <label htmlFor="radio-experience">Experience</label>
           </div>
@@ -23,6 +35,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="tools"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "tools"}
             />
             <label htmlFor="radio-tools">Tools</label>
           </div>
@@ -33,6 +46,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="development"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "development"}
             />
             <label htmlFor="radio-development">Development</label>
           </div>
@@ -43,6 +57,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="userinterface"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "userinterface"}
             />
             <label htmlFor="radio-userinterface">User Interface</label>
           </div>
@@ -53,6 +68,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="design"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "design"}
             />
             <label htmlFor="radio-design">Design</label>
           </div>
@@ -63,6 +79,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="learning"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "learning"}
             />
             <label htmlFor="radio-learning">Learning</label>
           </div>
@@ -73,6 +90,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="listening"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "listening"}
             />
             <label htmlFor="radio-listening">Listening to</label>
           </div>
@@ -83,6 +101,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="likes"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
+              checked={props.navClick === "likes"}
             />
             <label htmlFor="radio-likes">Likes</label>
           </div>

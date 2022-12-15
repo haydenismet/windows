@@ -16,7 +16,7 @@ function WindowFooter() {
   return (
     <>
       <div className="status-bar">
-        <p className="status-bar-field">{window.clientInformation.userAgent}</p>
+        <p className="status-bar-field">{window.location.origin}</p>
         <p className="status-bar-field">{getTime()}</p>
       </div>
     </>
