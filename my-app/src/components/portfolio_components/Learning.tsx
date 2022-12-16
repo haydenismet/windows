@@ -3,7 +3,13 @@ import React from "react";
 function Learning() {
   return (
     <>
-      <div className="learning">Learning</div>
+      <div className="learning">
+        <ul className="tree-view">
+          <li>
+            <h3>Learning</h3>
+          </li>
+        </ul>
+      </div>
     </>
   );
 }

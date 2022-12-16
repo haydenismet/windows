@@ -28,6 +28,38 @@ function About() {
               <li>Properties</li>
               <li>Selectors</li>
               <li>Specificity</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
+              <li>Properties</li>
+              <li>Selectors</li>
+              <li>Specificity</li>
             </ul>
           </li>
           <li>

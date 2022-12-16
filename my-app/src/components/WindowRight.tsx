@@ -40,7 +40,7 @@ function WindowRight(props: any) {
   return (
     <>
       <div className="right-inner-content">
-        {props.navClick ? renderPortfolio(props.navClick) : <Welcome />}
+        {props.navClick ? renderPortfolio(props.navClick) : <About />}
       </div>
     </>
   );

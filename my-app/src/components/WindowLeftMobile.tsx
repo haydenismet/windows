@@ -8,7 +8,10 @@ function WindowLeftMobile(props: any) {
           <option value="about" disabled selected>
             Please select
           </option>
-          <option value="about" selected={props.navClick === "about"}>
+          <option
+            value="about"
+            selected={props.navClick ? props.navClick === "about" : true}
+          >
             About
           </option>
           <option value="experience" selected={props.navClick === "experience"}>

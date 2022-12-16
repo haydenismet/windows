@@ -44,6 +44,7 @@ body {
 }
 
 .window {
+  max-height: 550px;
 }
 
 .content-container {
@@ -60,8 +61,7 @@ body {
 }
 
 .right-inner-content {
-  overflow-y: scroll;
-  max-height: 600px;
+  /*max-height: 600px;*/
 }
 
 .left-inner-content {
@@ -101,8 +101,8 @@ label {
   margin: 1rem 1rem;
 }
 
-.about ul li {
-  margin-left: 1rem;
+.tree-view {
+  padding: 2rem 3rem;
 }
 
 .close-container {
@@ -119,9 +119,27 @@ label {
   transform: translate(-50%, 0);
 }
 
+.spotify-logo-98 {
+  width: 3rem;
+  height: auto;
+}
+
+.tree-view {
+  height: 44.5rem;
+  overflow-y: scroll;
+}
+
+ul.tree-view {
+  padding: 1rem 2rem;
+}
+
 @media screen and (max-width: 600px) {
   .outer-container {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
   }
 
   .content-container {
@@ -145,7 +163,13 @@ label {
     margin-right: 0;
   }
 
-  /*.contact-container {
+  p.status-bar-field:nth-child(2) {
+    flex: 0.2 1;
+  }
+  /*.tree-view {
+    min-height: 100vh;
+  }
+  .contact-container {
     display: none;
   }*/
 }

@@ -13,7 +13,7 @@ function WindowLeftDesktop(props: any) {
               data-portfolio="about"
               name="portfolio-checklist"
               onClick={props.handleNavClick}
-              checked={props.navClick === "about"}
+              checked={props.navClick ? props.navClick === "about" : true}
             />
             <label htmlFor="radio-about">About</label>
           </div>
