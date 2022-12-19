@@ -7,7 +7,7 @@ function Listening() {
   const ENDPOINT: string = "https://accounts.spotify.com/api/token";
   const NOW_PLAYING: string =
     "https://api.spotify.com/v1/me/player/currently-playing";
-  //or https://api.spotify.com/v1/me/top/artists || top/tracks or me/player/recently-played - this doesnt have client scope tho youd need to readd it
+  //or https://api.spotify.com/v1/me/top/artists || https://api.spotify.com/v1/me/player/recently-played - updated with scope for api
 
   const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
   const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
