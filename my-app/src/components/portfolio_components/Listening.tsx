@@ -3,12 +3,23 @@ import querystring from "querystring";
 import { Buffer } from "buffer";
 import spot_98 from "../../assets/spot_98.png";
 
+//TYPESCRIPT MISSING AFTER
+
 function Listening() {
   const ENDPOINT: string = "https://accounts.spotify.com/api/token";
   const NOW_PLAYING: string =
     "https://api.spotify.com/v1/me/player/currently-playing";
-  //or https://api.spotify.com/v1/me/top/artists || https://api.spotify.com/v1/me/player/recently-played - updated with scope for api
+  //or https://api.spotify.com/v1/me/top/artists || https://api.spotify.com/v1/me/player/recently-played || https://api.spotify.com/v1/me/player/currently-playing - updated with scope for api
 
+  //pass data
+  function giveMeData(data: any) {
+    console.log("givemedata", data);
+    console.log("type of data", typeof data);
+    const requiredData = data.items ? data.items : data.item;
+    console.log("requiredData", requiredData);
+  }
+
+  //typescript it with interface....
   const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
   const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
   const REFRESH_TOKEN = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
@@ -24,13 +35,12 @@ function Listening() {
       client_secret,
       refresh_token
     );
-    if (response.status === 204 || response.status > 400) {
-      return false;
+    if (!response.ok) {
+      throw new Error("Sorry, data cannot be fetched. Check network tab.");
     }
-    const song = await response.json();
-    console.log(song);
-
-    return song;
+    const data = await response.json();
+    giveMeData(data);
+    return data;
   }
 
   //getNowPlaying func passes await awaitToken(), waits for token to return, then passes that into a fetch for NOW_PLAYING url.
