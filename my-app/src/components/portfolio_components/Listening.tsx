@@ -6,7 +6,19 @@ import spot_98 from "../../assets/spot_98.png";
 //TYPESCRIPT MISSING AFTER
 
 function Listening() {
-  const [songInfo, setSongInfo] = useState(null); // figure out way to set this response so it works. Whole thing may need reengineering and typescript adding
+  const [songInfo, setSongInfo] = useState<{
+    actions?: any;
+    context?: any;
+    currently_playing_type?: string;
+    is_playing?: boolean;
+    item?: any;
+    items?: any;
+    progress_ms?: number;
+    timestamp?: number;
+  }>({
+    item: null,
+  });
+  //const [songInfo, setSongInfo] = useState:<songObject | null>(null); // figure out way to set this response so it works. Whole thing may need reengineering and typescript adding
 
   const ENDPOINT: string = "https://accounts.spotify.com/api/token";
   const NOW_PLAYING: string =
@@ -33,15 +45,17 @@ function Listening() {
       throw new Error("Sorry, data cannot be fetched. Check network tab.");
     }
     const data = await response.json();
-    if (songInfo === null) {
+
+    if (songInfo.item === null) {
       setSongInfo(data);
     }
   }
 
   useEffect(() => {
-    console.log("songInfo", songInfo);
+    //getNowPlayingItem(), is called, passing down the three required params from your env setting. These will then flow down into the subsequent funcs as its parent func.
+    getNowPlayingItem(CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN);
   });
-
+  console.log("songInfo", songInfo);
   //getNowPlaying func passes await awaitToken(), waits for token to return, then passes that into a fetch for NOW_PLAYING url.
   async function getNowPlaying(
     client_id: string | undefined,
@@ -83,11 +97,6 @@ function Listening() {
     return response.json();
   }
 
-  //getNowPlayingItem(), is called, passing down the three required params from your env setting. These will then flow down into the subsequent funcs as its parent func.
-  getNowPlayingItem(CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN);
-  if (songInfo != null) {
-    console.log("song info if statement", songInfo["item"]["name"]);
-  }
   return (
     <>
       <div className="listening">
@@ -95,12 +104,14 @@ function Listening() {
           <li>
             <h3>Listening</h3>
           </li>
-
+          {songInfo && songInfo.item && songInfo.item.name
+            ? songInfo.item.name
+            : "Not loaded yet"}
           <li>
             <img src={spot_98} alt="spotify-logo" className="spotify-logo-98" />
           </li>
           <li>
-            <h3>er</h3>
+            <h3>ss</h3>
           </li>
         </ul>
       </div>
