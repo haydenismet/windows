@@ -133,6 +133,15 @@ ul.tree-view {
   padding: 1rem 2rem;
 }
 
+.listening-header {
+  display: flex;
+  align-items: center;
+}
+
+.listening-header img {
+  margin-right: 1rem;
+}
+
 @media screen and (max-width: 600px) {
   .outer-container {
     height: 100%;
