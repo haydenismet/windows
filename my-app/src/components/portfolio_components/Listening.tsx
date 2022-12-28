@@ -193,84 +193,99 @@ function Listening() {
   return (
     <>
       <div className="listening">
-        <ul className="tree-view">
-          <li className="listening-header">
-            <img src={spot_98} alt="spotify-logo" className="spotify-logo-98" />
-            <h3>Spotify Jamz</h3>
-          </li>
-
-          <div className="current-song-container">
-            {currentSong.albumImageUrl &&
-            currentSong.title &&
-            currentSong.artist ? (
-              <li>
-                <div className="current-song-info">
-                  <h3>Currently Playing</h3>
-
-                  <h3>{currentSong.artist[0]} </h3>
-                  <h3>{currentSong.title} </h3>
-                  <img
-                    src={
-                      currentSong ? currentSong.albumImageUrl : "Not loaded yet"
-                    }
-                    alt="current-track-cover"
-                    className="current-track-cover"
-                  />
+        <div className="all-songs-container">
+          <ul className="tree-view">
+            <li className="listening-header">
+              <img
+                src={spot_98}
+                alt="spotify-logo"
+                className="spotify-logo-98"
+              />
+              <h3 className="spotify-headings-start">Spotify</h3>
+            </li>
+            {/*      <h3 className="spotify-headings">Currently Playing</h3>
+            <div className="current-song-container">
+              {currentSong.albumImageUrl &&
+              currentSong.title &&
+              currentSong.artist ? (
+                <li>
+                  <div className="current-song-info">
+                    <div className="song-artist-title">
+                      <p className="current-song-p-artist">
+                        {currentSong.artist[0]}
+                      </p>
+                      <p className="current-song-p-title">
+                        {currentSong.title}
+                      </p>
+                    </div>
+                    <img
+                      src={
+                        currentSong
+                          ? currentSong.albumImageUrl
+                          : "Not loaded yet"
+                      }
+                      alt="current-track-cover"
+                      className="current-track-cover"
+                    />
+                  </div>
+                </li>
+              ) : (
+                <div className="not-currently-listening">
+                  <p>Not listening right now!</p>
+                  <p>But check out my favourites...</p>
                 </div>
-              </li>
-            ) : (
-              <div className="not-currently-listening">
-                <p>Not listening right now!</p>
-                <p>But check out my favourites...</p>
-              </div>
-            )}
-          </div>
-          <div className="recent-song-container">
-            <h3>Recently Played</h3>
-            {recentSong ? (
-              recentSong.map((song, index) => {
-                return (
-                  <li className="recent-song-info">
-                    <h3>{song.artist} </h3>
-                    <h3>{song.title} </h3>
-                    <img
-                      src={song ? song.albumImageUrl : "Not loaded yet"}
-                      alt="recent-track-cover"
-                      className="recent-track-cover"
-                    />
-                  </li>
-                );
-              })
-            ) : (
-              <div className="not-currently-listening">
-                <p>No favourites are appearing right now</p>
-              </div>
-            )}
-          </div>
-
-          <div className="top-song-container">
-            <h3>Top Artists</h3>
-            {topSong ? (
-              topSong.map((song, index) => {
-                return (
-                  <li className="top-song-info">
-                    <h3>{song.artist} </h3>
-
-                    <img
-                      src={song ? song.albumImageUrl : "Not loaded yet"}
-                      alt="top-track-cover"
-                      className="top-track-cover"
-                    />
-                  </li>
-                );
-              })
-            ) : (
-              <div className="not-currently-listening">
-                <p>No top songs are appearing right now</p>
-              </div>
-            )}
-          </div>
-        </ul>
+              )}
+              </div>*/}
+            <h3 className="spotify-headings">Recently Played</h3>
+            <div className="recent-song-container">
+              {recentSong ? (
+                recentSong.map((song, index) => {
+                  return (
+                    <li className="recent-song-info">
+                      <div className="song-artist-title">
+                        <p className="recent-song-p-artist">{song.artist} </p>
+                        <p className="recent-song-p-title">{song.title} </p>
+                      </div>
+                      <img
+                        src={song ? song.albumImageUrl : "Not loaded yet"}
+                        alt="recent-track-cover"
+                        className="recent-track-cover"
+                      />
+                    </li>
+                  );
+                })
+              ) : (
+                <div className="not-currently-listening">
+                  <p>No favourites are appearing right now</p>
+                </div>
+              )}
+            </div>
+            <h3 className="spotify-headings">Top Artists</h3>
+            <div className="top-song-container">
+              {topSong ? (
+                topSong.map((song, index) => {
+                  return (
+                    <li className="top-song-info">
+                      <div className="song-artist-title">
+                        <p className="top-song-p-artist">{song.artist} </p>
+                      </div>
+                      <img
+                        src={song ? song.albumImageUrl : "Not loaded yet"}
+                        alt="top-track-cover"
+                        className="top-track-cover"
+                      />
+                    </li>
+                  );
+                })
+              ) : (
+                <div className="not-currently-listening">
+                  <p>No top songs are appearing right now</p>
+                </div>
+              )}
+            </div>
+            <p className="song-end-p">Sorry about my music taste.</p>
+          </ul>
+        </div>
       </div>
     </>
   );
