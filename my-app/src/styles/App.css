@@ -101,11 +101,11 @@ p.status-bar-field:nth-child(2) {
   padding: 2rem 3rem;
 }
 
-/*.tree-view,
+.tree-view,
 .tree-view div,
 .tree-view li {
-  font-family: "RG", monospace;
-}*/
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .close-container {
   text-align: center;
