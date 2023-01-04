@@ -92,6 +92,63 @@ function About() {
                 </li>
               </ul>
             </details>
+            <details>
+              <summary>Skills</summary>
+              <ul>
+                <li>
+                  <details>
+                    <summary>Professional</summary>
+                    <ul>
+                      <li>Self starter and eager to learn new things</li>
+                      <li>Relationship building skills</li>
+                      <li>Experience leading a team</li>
+                      <li>Project co-ordination and launch</li>
+                      <li>Managing multiple projects</li>
+                      <li>Time and effort estimations</li>
+                      <li>Problem solving skills</li>
+                      <li>Highly organised</li>
+                      <li>Multi disciplined approach </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li>
+                  <details>
+                    <summary>Technical</summary>
+                    <ul>
+                      <li> HTML, CSS & SASS & Responsive Design</li>
+                      <li>JavaScript (ES2019)</li>
+                      <li>TypeScript</li>
+                      <li>jQuery</li>
+                      <li>React </li>
+                      <li>Express</li>
+                      <li>Node</li>
+                      <li>Git</li>
+                      <li>APIs</li>
+                      <li>Tests (Mocha/Chai/Karma)</li>
+                      <li>Firebase / MongoDB</li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>Design</summary>
+                    <ul>
+                      <li>Figma, Adobe XD, InVision, Adobe Creative Suite</li>
+                      <li>Prototyping & wire framing</li>
+                      <li>Focus on user journey and content management</li>
+                      <li>Style and Brand Guidelines</li>
+                      <li>HTML, CSS & SASS & Responsive Design</li>
+                      <li>Typography</li>
+                      <li>
+                        Understanding complexities of design when considering
+                        front end development.
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
           </li>
         </ul>
       </div>
